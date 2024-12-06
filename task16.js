@@ -4,13 +4,10 @@
 
 function task16() {
     num = BigInt(2 ** 1000);
-    console.log(num);
     num = `${num}`;
     summa = 0;
     for (i = 0; i < num.length; i++) {
-        console.log(num[i]);
-        a = Number(num[i])
-        summa += a;
+        summa += Number(num[i])
     }
     console.log(summa);
 }
